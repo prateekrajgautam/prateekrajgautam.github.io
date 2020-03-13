@@ -1,0 +1,9 @@
+
+*.tmp.drivedownload
+*.aux
+*.log
+*.spl
+*.synctex.gz
+*.blg
+*.bbl
+*.mat
