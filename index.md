@@ -4,4 +4,16 @@
 
 
 
-[DOWNLOAD PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/Prateek Raj Gautam DOCX RESUME 2020 v1.pdf)
+[DOWNLOAD PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/01_PrateekRajGautam_2021_Resume_with_photo_V2.pdf)
+
+
+
+
+
+```
+  <body>
+    <h1>How to disable downloading of the PDF document</h1>
+    <iframe src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/01_PrateekRajGautam_2021_Resume_with_photo_V2.pdf#toolbar=0" width="100%" height="100%">
+    </iframe>
+  </body>
+```
