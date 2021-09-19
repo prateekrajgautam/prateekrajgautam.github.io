@@ -6,7 +6,15 @@
 
 ![page4](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V2/04.jpg)
 
-[Download updated resume PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V2/01_PrateekRajGautam_2021_Resume_with_photo_V2.pdf)
+# [Download updated resume PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V2/01_PrateekRajGautam_2021_Resume_with_photo_V2.pdf)
+
+
+
+# [Download updated resume PDF with Schooling](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V2/01_PrateekRajGautam_2021_Resume_with_photo_V2withSchooling.pdf)
+
+
+
+
 
 ![Download updated resume PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V2/01_PrateekRajGautam_2021_Resume_with_photo_V2.pdf)
 
