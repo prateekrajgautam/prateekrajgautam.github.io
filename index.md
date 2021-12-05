@@ -1,4 +1,4 @@
-![](/PNG-1.png)
+![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-1.png)
 
 ![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-2.png)
 

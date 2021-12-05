@@ -1,18 +1,10 @@
-
-
-
-
-
-
-![](/PNG-1.png)
+![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-1.png)
 
 ![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-2.png)
 
 ![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-3.png)
 
 ![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-4.png)
-
-
 
 # [Download updated resume PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/01_PrateekRajGautam_2021_Resume_with_photo_V3.pdf)
 
