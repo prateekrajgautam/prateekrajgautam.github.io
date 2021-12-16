@@ -13,9 +13,16 @@
       color: white;
       text-decoration: none;
       list-style: none;
-      padding:none;
-      margin:none;
+      padding: none;
+      margin: none;
 
+    }
+
+    #code {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.527);
+      padding: 20px;
+      border-radius: 10px;
     }
 
     ul {
@@ -25,6 +32,7 @@
 
     a {
       color: #14b2ce;
+      text-decoration: none;
     }
 
     .selectDisable {
@@ -48,36 +56,59 @@
       background-color: #EEE;
     }
 
-    #left-content{
+    #left-content {
       display: inline-block;
       width: 100%;
-      min-width:600px;
       background-color: #223;
-      padding:40px;
+      padding: 40px;
       transition: box-shadow 100ms ease-in;
     }
 
+    #left-content>ul {
+      display: inline-block;
 
+    }
 
-    #pdf{
+    #left-content>ul>li {
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    #left-content>ul>li:after {
+      content: " |";
+
+    }
+
+    #left-content>ul>li:nth-child(1):before {
+      content: "| ";
+
+    }
+
+    #left-content>h3 {
+      display: none;
+    }
+
+    #left-content>p {
+      display: block;
+    }
+
+    #pdf {
       display: inline-block;
       width: 100%;
-      min-width:600px;
-      height:90vh;
+      height: 90vh;
       background-color: #122;
       text-align: center;
-      transition: box-shadow 100ms ease-in;
-      padding:0px;
+      padding: 0px;
     }
 
-    #Email{
+    #Email {
       display: inline-block;
-      width: 100%;
-      min-width:600px;
+      width: 60%;
       background-color: #221;
-      padding:20%;
-      text-align: center;
+      padding: 20%;
+      text-align: right;
     }
+
     #image-group {
       width: 200px;
 
@@ -87,36 +118,92 @@
       display: inline-block;
     }
 
+    .p1 {
+      padding: 40px;
+      box-shadow: #001 2px 2px 2px;
+      border-radius: 5px;
+      max-width: 80%;
+    }
 
-    footer{
-      padding:20px;
-      min-height:200px;
-      color:#cbb;
+    footer {
+      padding: 20px;
+      min-height: 200px;
+      color: #cbb;
       background-color: #110;
+      text-align: right;
     }
-    .embedImg{ 
-      width:40px;
+
+    .embedImg {
+      width: 40px;
 
     }
 
-    .button{
+    .button {
       display: inline-block;
-      padding:15px;
+      padding: 15px;
       font-size: 20px;
       font-weight: 700;
       border-radius: 10px;
-      margin:10px;
-      color:#fff;
+      margin: 10px;
+      color: #fff;
       background-color: rgb(12, 165, 192);
     }
-    .button:hover{
+
+    .button:hover {
       box-shadow: rgb(7, 226, 255) 3px 3px 2;
     }
-    .button>a{
-      color:white;
+
+    .button>a {
+      color: white;
       text-decoration: none;
     }
 
+
+
+    #software {
+      background-color: rgb(75, 69, 69);
+      margin: 0px;
+      padding: 40px;
+    }
+
+    table {
+      background-color: rgb(105, 25, 56);
+      padding: 15px;
+      border: rgb(75, 69, 69) solid 2px;
+      margin: auto;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    thead {
+      background-color: rgb(12, 12, 37);
+
+    }
+
+    tr {
+      display: block;
+      padding: 10px;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgb(24, 25, 29);
+    }
+
+    td:nth-child(odd) {
+      width: 20%;
+      text-align: left;
+    }
+
+    td:nth-child(even) {
+      width: 60%;
+    }
   </style>
 </head>
 
@@ -128,57 +215,180 @@
 
     <div id="left-content">
       <h2> About Me</h2>
-      <p>hi</p>
+      <p class="p1">Prateek Raj Gautam received the M.Tech. degree in electronics and communication engineering from the
+        Harcourt Butler Technological Institute Kanpur, India, in 2011. He is currently pursuing Ph.D. degree with the
+        Motilal Nehru National Institute of Technology at Allahabad, Prayagraj, India. His research interests include
+        energy-efficient scheme for wireless sensor networks, image processing, CDMA, IDMA, and brain wave mapping.</p>
       <h2> Connect with me</h2>
+      <p>
+      <h3>
+        Research
+      </h3>
+      <ul id="research-links">
+        <li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
+        <li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google scholar</a>
+        </li>
+        <li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
+        <li><a href="https://github.com/prateekrajgautam" target="_blank">Github</a></li>
+        <li><a href="https://publons.com/researcher/2100291/prateek-raj-gautam" target="_blank">Publons/ResearchID</a>
+        </li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57194277572" target="_blank">Scopus</a></li>
+
+      </ul>
+      </p>
+
+      <p>
+      <h3>
+        Social
+      </h3>
       <ul id="social-links">
         <li><a href="https://t.me/prateekrajgautam" target="_blank">Telegram</a></li>
-        <li><a href="linkedin.com/prateekrajgautam" target="_blank">Linkedin</a></li>
+        <li><a href="https://linkedin.com/prateekrajgautam" target="_blank">Linkedin</a></li>
         <li><a href="https://fb.me/prateekrajgautam" target="_blank">Facebook</a></li>
-        <li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
-        <li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google scholar</a></li>
-        <li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
+        </li>
+        <li><a href="https://github.com/prateekrajgautam" target="_blank">Github</a></li>
+        </li>
       </ul>
+      </p>
 
-      </div>
-      <div id="pdf">
-        <embed src="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" width="100%" height="151%" >
 
-<!--
+
+
+    </div>
+    <div id="pdf">
+      <h2>Resume</h2>
+      <embed src="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" width="100%" height="151%">
+
+      <!--
       <object data="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" type="application/pdf" width=100% height=100% sidebar="none" zoom="pagefit">
         <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
           download>PDF Download</a>
       </object>
           -->
-
     </div>
-    <br />
-    <div id="Email" >
-      <h2>Embed Code</h2>
+
+    <div id="software">
+      <h2>Softwares and websites designed as hobby</h2>
+
+
+
+
+      <table>
+        <thead>
+          <tr>
+            <td>Name / URL</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="http://mnnit.ac.in/vcas2018/" target="_blank">VCAS 2018</a></td>
+            <td>International Conference on VLSI, Communication and Signal Processing<br />
+
+              Organised by ECED MNNIT Allahabad</td>
+          </tr>
+          <tr>
+            <td><a href="https://fwh.mgeek.in/">Free Wifi Hotspot
+              </a></td>
+            <td>Wifi hotspot creator on windows xp written in python and GUI designed using python/Tkinter</td>
+          </tr>
+          <tr>
+            <td><a href="https://formhelper.mgeek.in/">Form Helper</a></td>
+            <td>A software to fill web forms from data saved in excel sheets. Written in python and GUI designed using
+              KIVY</td>
+          </tr>
+          <tr>
+            <td><a href="http://mgeek.in/">mGeek.in</a></td>
+            <td>Static Websited written jekyll and jekyll theme compiled with ruby gems.</td>
+          </tr>
+          <tr>
+            <td><a href="https://easylist.mgeek.in/">Easylist</a></td>
+            <td>Shopping and ordering website for URC Tughlakabad to facilitate ordering during COVID-19 pandamic. </td>
+          </tr>
+          <!--          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>-->
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="Email">
+      <h2 class="selectDisable">Embed Code</h2>
 
       <div id="Embed" class="selectEnable">
-        <code>
-        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-          download><img class="embedImg"
-            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-1.png" /></a>
-        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-          download><img class="embedImg"
-            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-2.png" /></a>
-        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-          download><img class="embedImg"
-            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-3.png" /></a>
-        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-          download><img class="embedImg"
-            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-4.png" /></a>
+
+
+        <div id="code" class="selectEnable">
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+            download><img class="embedImg" max-width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-1.png" /></a>
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+            download><img class="embedImg" max-width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-2.png" /></a>
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+            download><img class="embedImg" max-width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-3.png" /></a>
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+            download><img class="embedImg" max-width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-4.png" /></a>
+          <br />
+
+        </div>
       </div>
-    </code>
+
       <div id="download" class="selectDisable">
         <div class="button">
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf" target="_download">
-            Resume Download 
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+            target="_download">
+            Resume Download
           </a>
         </div>
         <div class="button">
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4withSchooling.pdf" target="_download">
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4withSchooling.pdf"
+            target="_download">
             Detailed Resume Download
           </a>
         </div>
@@ -190,7 +400,7 @@
 
 
   <footer class="selectDisable">
-<p>&copy 2021 prateekrajgautam</p>
+    <p>&copy 2021 prateekrajgautam</p>
   </footer>
 </body>
 
