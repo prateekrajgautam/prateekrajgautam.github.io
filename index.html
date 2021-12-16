@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      top: 0px;
+      background-color: #112;
+      color: white;
+      text-decoration: none;
+      list-style: none;
+      padding:none;
+      margin:none;
+
+    }
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    a {
+      color: #14b2ce;
+    }
+
+    .selectDisable {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    .selectEnable {
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -o-user-select: text;
+      user-select: text;
+    }
+
+    #container {
+      display: block;
+      background-color: #EEE;
+    }
+
+    #left-content{
+      display: inline-block;
+      width: 100%;
+      min-width:600px;
+      background-color: #223;
+      padding:40px;
+      transition: box-shadow 100ms ease-in;
+    }
+
+
+
+    #pdf{
+      display: inline-block;
+      width: 100%;
+      min-width:600px;
+      height:90vh;
+      background-color: #122;
+      text-align: center;
+      transition: box-shadow 100ms ease-in;
+      padding:0px;
+    }
+
+    #Email{
+      display: inline-block;
+      width: 100%;
+      min-width:600px;
+      background-color: #221;
+      padding:20%;
+      text-align: center;
+    }
+    #image-group {
+      width: 200px;
+
+    }
+
+    #image-group>a {
+      display: inline-block;
+    }
+
+
+    footer{
+      padding:20px;
+      min-height:200px;
+      color:#cbb;
+      background-color: #110;
+    }
+    
+
+    .button{
+      display: inline-block;
+      padding:15px;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 10px;
+      margin:10px;
+      color:#fff;
+      background-color: rgb(12, 165, 192);
+    }
+    .button:hover{
+      box-shadow: rgb(7, 226, 255) 3px 3px 2;
+    }
+    .button>a{
+      color:white;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dr. Prateek Raj Gautam</h1>
+  </header>
+  <div id="container">
+
+    <div id="left-content">
+      <h2> About Me</h2>
+      <p>hi</p>
+      <h2> Connect with me</h2>
+      <ul id="social-links">
+        <li><a href="https://t.me/prateekrajgautam" target="_blank">Telegram</a></li>
+        <li><a href="linkedin.com/prateekrajgautam" target="_blank">Linkedin</a></li>
+        <li><a href="https://fb.me/prateekrajgautam" target="_blank">Facebook</a></li>
+        <li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
+        <li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google scholar</a></li>
+        <li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
+      </ul>
+
+      </div>
+      <div id="pdf">
+        <embed src="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" width="100%" height="151%" >
+
+<!--
+      <object data="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" type="application/pdf" width=100% height=100% sidebar="none" zoom="pagefit">
+        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+          download>PDF Download</a>
+      </object>
+          -->
+
+    </div>
+    <br />
+    <div id="Email" >
+      <h2>Embed Code</h2>
+
+      <div id="Embed" class="selectEnable">
+
+        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+          download><img
+            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-1.png" /></a>
+        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+          download><img
+            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-2.png" /></a>
+        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+          download><img
+            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-3.png" /></a>
+        <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+          download><img
+            src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-4.png" /></a>
+      </div>
+
+      <div id="download" class="selectDisable">
+        <div class="button">
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf" target="_download">
+            Resume Download 
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4withSchooling.pdf" target="_download">
+            Detailed Resume Download
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="selectDisable">
+<p>&copy 2021 prateekrajgautam</p>
+  </footer>
+</body>
+
+</html>
