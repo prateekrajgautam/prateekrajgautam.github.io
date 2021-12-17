@@ -63,7 +63,7 @@
     #left-content {
       display: inline-block;
       background-color: #223;
-      padding:0 10%;
+      padding:0 15vw;
       transition: box-shadow 100ms ease-in;
     }
 
@@ -99,12 +99,23 @@
     #pdf {
       display: inline-block;
       width: 100%;
-      height: 90vh;
       background-color: #122;
       text-align: center;
       padding: 0px;
-      padding-top: 20px;
     }
+
+
+
+
+    #pdfrelated{
+      margin:10px,0px;
+      padding:10%;
+      text-align: center;
+    }
+ #pdfObject{
+   height:100vw;
+   width:80vw;
+ }
 
     #Email {
       display: inline-block;
@@ -131,7 +142,7 @@
     }
 
     footer {
-      padding: 20px;
+      padding: 20px,20%;
       min-height: 50px;
       color: #cbb;
       background-color: #110;
@@ -173,7 +184,7 @@
     #software {
       background-color: rgb(75, 69, 69);
       margin: 0px;
-      padding: 40px;
+      padding: 40px 20%;
     }
 
     table {
@@ -297,31 +308,34 @@
       <!--<embed src="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" width="100%" height="151%">
       -->
       <!---->
-      <object data="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" type="application/pdf" width=100% height=151% sidebar="none">
-        <div id="pdfbackground" class="selectEnable">
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-            download><img class="pdfBgImg" max-width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-1.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-            download><img class="pdfBgImg" max-width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-2.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-            download><img class="pdfBgImg" max-width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-3.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-            download><img class="pdfBgImg" max-width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-4.png" /></a>
-          <br />
+<div id="pdfrelated">
+  <object id="pdfObject" data="./V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf#page=1" type="application/pdf">
+    <div id="pdfbackground" class="selectEnable">
+      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+        download><img class="pdfBgImg" max-width=80%
+          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-1.png" /></a>
+      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+        download><img class="pdfBgImg" max-width=80%
+          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-2.png" /></a>
+      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+        download><img class="pdfBgImg" max-width=80%
+          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-3.png" /></a>
+      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+        download><img class="pdfBgImg" max-width=80%
+          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/PNG-4.png" /></a>
+      <br />
 
-        </div>
-        <p>PDF preview not available on mobile devices. Please download the resume from link below. </p><br />
-        <div class="button">
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
-            target="_download">
-            Download Resume 
-          </a>
-        </div>
-      </object>
+    </div>
+    <p>PDF preview not available on mobile devices. Please download the resume from link below. </p><br />
+    <div class="button">
+      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V4/01_PrateekRajGautam_2021_Resume_with_photo_V4.pdf"
+        target="_download">
+        Download Resume 
+      </a>
+    </div>
+  </object>
+
+</div>
           
     </div>
 
