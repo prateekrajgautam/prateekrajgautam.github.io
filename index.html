@@ -7,16 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
-      font-size: small;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      top: 0px;
-      background-color: #112;
-      color: white;
+    * {
+      text-decoration: none;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    :root {
+      --h: 140;
+      --s: 70%;
+      --l: 5%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+    }
+
+    html {
       text-decoration: none;
       list-style: none;
       padding: none;
       margin: none;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding-block: 1em;
+    }
+
+    .section-small {
+      padding-block: clamp(3em, 10vh, 10em);
+    }
+
+    .container {
+      padding-inline: clamp(3em, 10vw, 15em);
+    }
+
+    .container-large {
+      padding-inline: clamp(1em, 5vw, 5em);
+    }
+
+    /* .section-dark {
+      --h: 120;
+      --s: 80%;
+      --l: 10%;
+      background: hsla(var(--h), var(--s), var(--l), var(--a), );
+    } */
+
+    body {
+      font-size: small;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      top: 0px;
+      /* background-color: #112; */
+      color: white;
+
 
     }
 
@@ -27,7 +74,7 @@
       border-radius: 10px;
     }
 
-    #pdfbackground {}
+
 
     ul {
       text-decoration: none;
@@ -40,19 +87,12 @@
     }
 
     .selectDisable {
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -o-user-select: none;
       user-select: none;
     }
 
     .selectEnable {
-      -webkit-user-select: text;
-      -khtml-user-select: text;
-      -moz-user-select: text;
-      -o-user-select: text;
-      user-select: text;
+
+      user-select: all;
     }
 
     #container {
@@ -60,46 +100,56 @@
       background-color: #EEE;
     }
 
-    #left-content {
-      display: inline-block;
-      background-color: #223;
-      padding: 0 15vw;
+
+
+    #contact {
+      --h: 190;
+      --s: 40%;
+      --l: 5%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
       transition: box-shadow 100ms ease-in;
     }
 
-    #left-content>ul {
+    #contact ul {
       display: inline-block;
 
     }
 
-    #left-content>ul>li {
+    #contact li {
       text-transform: uppercase;
       display: inline-block;
     }
 
-    #left-content>ul>li:after {
+    #contact li:after {
       content: " |";
 
     }
 
-    #left-content>ul>li:nth-child(1):before {
+    #contact li:nth-child(1):before {
       content: "| ";
 
     }
 
-    #left-content>h3 {
+    .left-content>h3 {
       display: none;
     }
 
-    #left-content>p {
+    .left-content>p {
       display: block;
-      background-color: rgba(255, 255, 255, 0.288);
+      background-color: hsla(0, 0%, 100%, 0.288);
     }
 
-    #pdf {
+    .pdf {
       display: inline-block;
       width: 100%;
-      background-color: #122;
+      --h: 200;
+      --s: 33%;
+      --l: 10%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+      /* background-color: hsl(180, 33%, 10%); */
       text-align: center;
       padding: 0px;
     }
@@ -107,21 +157,29 @@
 
 
 
-    #pdfrelated {
-      margin: 10px, 0px;
-      padding: 10%;
+    .pdfrelated {
+      /* margin: 10px, 0px; */
+      padding-block: 1em;
       text-align: center;
     }
 
-    #pdfObject {
-      height: 100vw;
-      width: 80vw;
+    .pdfObject {
+      height: 100vh;
+      width: 80%;
+
+      padding-block: 1em;
     }
 
     #Email {
       display: inline-block;
       width: 60%;
-      background-color: #221;
+      /* background-color: hsl(60, 33%, 10%); */
+      --h: 240;
+      --s: 23%;
+      --l: 10%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
       padding: 5% 20%;
       text-align: right;
     }
@@ -135,11 +193,31 @@
       display: inline-block;
     }
 
-    .p1 {
-      padding: 10px 40px;
+    #introduction .p1 {
+      padding: 1em 3em;
+      margin-block: 1em;
       box-shadow: #001 2px 2px 2px;
-      border-radius: 30px;
-      max-width: 80%;
+      border-radius: 1em;
+      max-width: 90%;
+    }
+
+    #introduction {
+      /* background-color: hsl(240, 20%, 17%); */
+      --h: 240;
+      --s: 20%;
+      --l: 17%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+    }
+
+    #Embed * {
+      font-size: 0px;
+    }
+
+    #Embed img {
+      padding: 5px;
+
     }
 
     footer {
@@ -183,13 +261,19 @@
 
 
     #software {
-      background-color: rgb(75, 69, 69);
+      --h: 210;
+      --s: 10%;
+      --l: 15%;
+      --a: 1;
+      background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+      /* background-color: hsl(0, 4%, 28%); */
       margin: 0px;
-      padding: 40px 20%;
+      /* padding: 40px 20%; */
     }
 
     table {
-      background-color: rgb(105, 25, 56);
+      background-color: hsl(210, 30%, 20%);
       padding: 15px;
       border: rgb(75, 69, 69) solid 2px;
       margin: auto;
@@ -240,88 +324,71 @@
   <header>
     <!--    <h1>Dr. Prateek Raj Gautam</h1>-->
   </header>
-  <div id="container">
+  <div id="app">
+    <section id="introduction" class="container section-small">
+      <div class="left-content selectEnable ">
+        <h1 class="selectDisable"> Introduction</h1>
+        <p class="p1">
+          Hi! I am <b>Dr. Prateek Raj Gautam</b>.
+        </p>
+        <p class="p1">
+          I have earned my <b>Ph.D.</b> in 2022 from <b>Motilal Nehru National Institute of Technology at Allahabad</b>,
+          Prayagraj, India. under the supervision of <b>Dr. Arvind Kumar</b> (Associate Professor ECED, MNNIT) on the
+          topic "<b><i>Energy-Efficient 2D and 3D Localization in Wireless Sensor Networks using Single Anchor
+              Node.</i></b>"
+        </p>
+        <p class="p1">
+          I have around <b>4 years of pre-PhD teaching experience</b> as an <b>Assistant Professor</b> at Allen house
+          Institute of Technology and Naraina College of Engineering and Technology.
 
-    <div id="left-content">
-      <!--<h2> About Me</h2>-->
-      <p class="p1">
-        Hi! I am <b>Dr. Prateek Raj Gautam</b>.
-      </p>
-      <p class="p1">
-        I have earned my <b>Ph.D.</b> in 2022 from <b>Motilal Nehru National Institute of Technology at Allahabad</b>,
-        Prayagraj, India. under the supervision of <b>Dr. Arvind Kumar</b> (Associate Professor ECED, MNNIT) on the
-        topic "<b><i>Energy-Efficient 2D and 3D Localization in Wireless Sensor Networks using Single Anchor
-            Node.</i></b>"
-      </p>
-      <p class="p1">
-        I have around <b>4 years of pre-PhD teaching experience</b> as an <b>Assistant Professor</b> at Allen house
-        Institute of Technology and Naraina College of Engineering and Technology.
+        </p>
+        <p class="p1">
+          I have received <b>M.Tech.</b> degree in electronics and communication engineering from <b>Harcourt Butler
+            Technological Institute</b> Kanpur, India, in 2011.
 
-      </p>
-      <p class="p1">
-        I have received <b>M.Tech.</b> degree in electronics and communication engineering from <b>Harcourt Butler
-          Technological Institute</b> Kanpur, India, in 2011.
+        </p>
+        <p class="p1">My research interests are in the energy-efficient scheme for wireless sensor networks, image
+          processing, CDMA, IDMA, and brain wave mapping.
 
-      </p>
-      <p class="p1">My research interests are in the energy-efficient scheme for wireless sensor networks, image
-        processing, CDMA, IDMA, and brain wave mapping.
+        </p>
+        <p class="p1">
+          I have advanced experience with subject-related software like <b>MATLAB, Python, CST Studio Suite,
+            LTspice.</b>
+        </p>
+        <p class="p1"> I have sound skills at producing high-quality documents and illustrations in <b>LaTeX/Tikz</b>
+          and
+          2d and 3d drawing and animation software like <b>Inkscape, GIMP, and Blender</b>.
 
-      </p>
-      <p class="p1">
-        I have advanced experience with subject-related software like <b>MATLAB, Python, CST Studio Suite, LTspice.</b>
-      </p>
-      <p class="p1"> I have sound skills at producing high-quality documents and illustrations in <b>LaTeX/Tikz</b> and
-        2d and 3d drawing and animation software like <b>Inkscape, GIMP, and Blender</b>.
-
-      </p>
-      <p class="p1"> I would like to research in the field of wireless networks and their application. <i>Currently, I
-          am exploring optimization and machine learning and its applications in Wireless Sensor Networks.</i>
-      </p>
-      <!--<h2> Connect with me</h2>-->
-      <p>
-      <h3>
-        Research
-      </h3>
-      <ul id="research-links">
-        <li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
-        <li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google scholar</a>
-        </li>
-        <li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
-        <li><a href="https://publons.com/researcher/2100291/prateek-raj-gautam" target="_blank">Publons/ResearchID</a>
-        </li>
-        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57194277572" target="_blank">Scopus</a></li>
-
-      </ul>
-      </p>
-
-      <p>
-      <h3>
-        Social
-      </h3>
-      <ul id="social-links">
-        <li><a href="https://t.me/prateekrajgautam" target="_blank">Telegram</a></li>
-        <li><a href="https://www.linkedin.com/in/prateekrajgautam/" target="_blank">Linkedin</a></li>
-        <li><a href="https://github.com/prateekrajgautam" target="_blank">Github</a></li>
-        </li>
-
-        <li><a
-            href="mailto:prateekrajgautam@gmail.com?subject=from personal website&body=Hello, Dear Dr. Prateek Raj Gautam">Gmail</a>
-        </li>
-        <li><a href="https://wa.me/+919151404899?text=From%20personal%20website">Whatsapp</a></li>
-      </ul>
-      </p>
+        </p>
+        <p class="p1"> I would like to research in the field of wireless networks and their application. <i>Currently, I
+            am exploring optimization and machine learning and its applications in Wireless Sensor Networks.</i>
+        </p>
+        <!--<h2> Connect with me</h2>-->
+        <p>
 
 
 
 
-    </div>
-    <div id="pdf">
-      <h2>Resume</h2>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div id="resume" class="pdf section-small container">
+      <h1>Resume</h1>
       <!--<embed src="./V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf#page=1" width="100%" height="151%">
       -->
       <!---->
-      <div id="pdfrelated">
-        <object id="pdfObject" data="./V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf#page=1"
+      <div class="pdfrelated">
+        <object class="pdfObject" data="./V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf#page=1"
           type="application/pdf">
           <div id="pdfbackground" class="selectEnable">
             <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
@@ -352,8 +419,8 @@
 
     </div>
 
-    <div id="software">
-      <h2>Softwares and websites designed as hobby</h2>
+    <div id="software" class="section-small container">
+      <h2>Softwares and websites designed</h2>
 
 
 
@@ -366,6 +433,12 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><a href="https://mac2023.github.io" target="_blank">MAC 2023</a></td>
+            <td>INTERNATIONAL CONFERENCE ON MICROWAVE, ANTENNA, AND COMMUNICATION<br />
+
+              Organised by ECED MNNIT Allahabad</td>
+          </tr>
           <tr>
             <td><a href="http://mnnit.ac.in/vcas2018/" target="_blank">VCAS 2018</a></td>
             <td>International Conference on VLSI, Communication and Signal Processing<br />
@@ -439,37 +512,64 @@
 
 
 
+    <section id="contact" class="section-small container section-dark">
+      <h1>Contact</h1>
+      <h3>
+        Research
+      </h3>
+      <ul id="research-links">
+        <li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
+        <li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google
+            scholar</a>
+        </li>
+        <li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
+        <li><a href="https://publons.com/researcher/2100291/prateek-raj-gautam" target="_blank">Publons/ResearchID</a>
+        </li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57194277572" target="_blank">Scopus</a></li>
+
+      </ul>
+      </p>
+
+      <p>
+      <h3>
+        Social
+      </h3>
+      <ul id="social-links">
+        <li><a href="https://t.me/prateekrajgautam" target="_blank">Telegram</a></li>
+        <li><a href="https://www.linkedin.com/in/prateekrajgautam/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/prateekrajgautam" target="_blank">Github</a></li>
+        </li>
+
+        <li><a
+            href="mailto:prateekrajgautam@gmail.com?subject=from personal website&body=Hello, Dear Dr. Prateek Raj Gautam">Gmail</a>
+        </li>
+        <li><a href="https://wa.me/+919151404899?text=From%20personal%20website">Whatsapp</a></li>
+      </ul>
+      </p>
+    </section>
+
 
     <div id="Email">
-      <h2 class="selectDisable">Embed Code</h2>
 
-      <div id="Embed" class="selectEnable">
-        <div id="code" class="selectEnable">
+
+      <div id="Embed" class="selectDisable">
+        <h2 class="selectDisable">Embed Code</h2>
+        <div id="code" class="intro selectEnable">
           <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
-            download><img class="embedImg" width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-1.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
-            download><img class="embedImg" width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-2.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
-            download><img class="embedImg" width=80%
-              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-3.png" /></a>
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
-            download><img class="embedImg" width=80%
+            download class="selectEnable">
+            <img class="embedImg selectEnable" width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-1.png" />
+            <img class="embedImg selectEnable" width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-2.png" />
+            <img class="embedImg selectEnable" width=80%
+              src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-3.png" />
+            <img class="embedImg selectEnable" width=80%
               src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/PNG-4.png" /></a>
           <br />
-
         </div>
+
       </div>
 
-      <!--  <div id="download" class="selectDisable">
-        <div class="button">
-          <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
-            target="_download">
-            Resume Download
-          </a>
-        </div>
--->
       <div class="button selectDisable">
         <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9withSchooling.pdf"
           target="_download">
@@ -483,7 +583,7 @@
   </div>
 
 
-  <footer class="selectDisable">
+  <footer class="selectDisable container-large">
     <p><a
         href="mailto:prateekrajgautam@gmail.com?subject=from personal website&body=Hello, Dear Dr. Prateek Raj Gautam">&copy
         2022 prateekrajgautam</a></p>
@@ -504,7 +604,9 @@
   </footer>
 </body>
 <script>
-
+  var intro = document.getElementById("introduction").innerHTML
+  var embedintro = document.getElementsByClassName("intro")
+  embedintro[0].innerHTML = intro + embedintro[0].innerHTML;
 
 </script>
 
