@@ -12,6 +12,7 @@
       list-style: none;
       padding: 0px;
       margin: 0px;
+      overflow: auto
     }
 
     :root {
@@ -310,6 +311,39 @@
     td:nth-child(even) {
       width: 60%;
     }
+
+    /* 
+    header {
+      position: relative;
+    } */
+
+    nav {
+      display: block;
+      position: sticky;
+      top: 0px;
+    }
+
+    nav>ul {
+      position: sticky;
+      top: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    nav>ul>li {
+      padding: 1em
+    }
+
+    nav>ul>li a {
+      padding: 1em;
+
+    }
+
+    nav>ul>li a:hover {
+      color: white;
+    }
   </style>
 
 
@@ -323,6 +357,15 @@
 <body>
   <header>
     <!--    <h1>Dr. Prateek Raj Gautam</h1>-->
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#software">Highlights</a></li>
+        <!-- <li><a href=""></a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <div id="app">
     <section id="introduction" class="container section-small">
@@ -552,9 +595,9 @@
     <div id="Email">
 
 
-      <div id="Embed" class="selectDisable">
+      <div id="Embed" class="selectDisable" onclick="copyHTML">
         <h2 class="selectDisable">Embed Code</h2>
-        <div id="code" class="intro selectEnable">
+        <div id="code" class="intro selectEnable" onclick="copyHTML()">
           <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V9/01_PrateekRajGautam_2022_Resume_with_photo_V9.pdf"
             download class="selectEnable">
             <img class="embedImg selectEnable" width=80%
@@ -607,7 +650,11 @@
   var intro = document.getElementById("introduction").innerHTML
   var embedintro = document.getElementsByClassName("intro")
   embedintro[0].innerHTML = intro + embedintro[0].innerHTML;
-
+  function copyHTML() {
+    var data = document.getElementById("code").innerHTML
+    // navigator.clipboard.writeText(data)
+    // alert("Copied to clip")
+  }
 </script>
 
 </html>
