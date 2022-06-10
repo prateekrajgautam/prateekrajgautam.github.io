@@ -1,0 +1,368 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    /* overflow: auto; */
+    font-size: 1rem;
+}
+
+:root {
+    --h: 140;
+    --s: 70%;
+    --l: 5%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+}
+
+html {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+#app {
+    display: block;
+    position: relative;
+
+}
+
+header {
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: hsl(198, 100%, 7%);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding-block: 1em;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem)
+}
+
+.section {
+    padding-block: clamp(4em, 15vh, 15em);
+}
+
+.section-small {
+    padding-block: clamp(3em, 10vh, 10em);
+}
+
+.container {
+    padding-inline: clamp(3em, 10vw, 15em);
+}
+
+.container-large {
+    padding-inline: clamp(1em, 5vw, 5em);
+}
+
+/* .section-dark {
+    --h: 120;
+    --s: 80%;
+    --l: 10%;
+    background: hsla(var(--h), var(--s), var(--l), var(--a), );
+  } */
+
+body {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 0px;
+    /* background-color: #112; */
+    color: white;
+
+
+}
+
+#code {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: #14b2ce;
+    text-decoration: none;
+}
+
+.selectDisable {
+    user-select: none;
+}
+
+.selectEnable {
+
+    user-select: all;
+}
+
+#container {
+    display: block;
+    background-color: #EEE;
+}
+
+
+
+#contact {
+    --h: 190;
+    --s: 40%;
+    --l: 5%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+    transition: box-shadow 100ms ease-in;
+}
+
+#contact ul {
+    display: inline-block;
+
+}
+
+#contact li {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#contact li:after {
+    content: " |";
+
+}
+
+#contact li:nth-child(1):before {
+    content: "| ";
+
+}
+
+.left-content>h3 {
+    display: none;
+}
+
+.left-content>p {
+    display: block;
+    background-color: hsla(0, 0%, 100%, 0.288);
+}
+
+.pdf {
+    display: inline-block;
+    width: 100%;
+    --h: 200;
+    --s: 33%;
+    --l: 10%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+    /* background-color: hsl(180, 33%, 10%); */
+    text-align: center;
+    padding: 0px;
+}
+
+
+
+
+.pdfrelated {
+    /* margin: 10px, 0px; */
+    padding-block: 1em;
+    text-align: center;
+}
+
+.pdfObject {
+    height: 100vh;
+    width: 80%;
+
+    padding-block: 1em;
+}
+
+#Email {
+    display: inline-block;
+    width: 60%;
+    /* background-color: hsl(60, 33%, 10%); */
+    --h: 240;
+    --s: 23%;
+    --l: 10%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+    padding: 5% 20%;
+    text-align: right;
+}
+
+#image-group {
+    width: 200px;
+
+}
+
+#image-group>a {
+    display: inline-block;
+}
+
+#introduction .p1 {
+    padding: 1em 3em;
+    margin-block: 1em;
+    box-shadow: #001 2px 2px 2px;
+    border-radius: 1em;
+    max-width: 90%;
+}
+
+#introduction {
+    /* background-color: hsl(240, 20%, 17%); */
+    --h: 240;
+    --s: 20%;
+    --l: 17%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+}
+
+#Embed * {
+    font-size: 0px;
+}
+
+#Embed img {
+    padding: 5px;
+
+}
+
+footer {
+    min-height: 50px;
+    color: #cbb;
+    background-color: #110;
+    text-align: right;
+}
+
+.embedImg {
+    width: 40px;
+}
+
+.pdfBgImg {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 20px 0px;
+    color: #fff;
+    background-color: rgb(12, 165, 192);
+}
+
+.button:hover {
+    box-shadow: rgb(7, 226, 255) 3px 3px 2;
+}
+
+.button>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#software {
+    --h: 210;
+    --s: 10%;
+    --l: 15%;
+    --a: 1;
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+
+    /* background-color: hsl(0, 4%, 28%); */
+    margin: 0px;
+    /* padding: 40px 20%; */
+}
+
+table {
+    font-size: 1em;
+    background-color: hsl(210, 30%, 20%);
+    padding: 15px;
+    border: rgb(75, 69, 69) solid 2px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+thead {
+    background-color: hsla(240, 55%, 8%, 0.644);
+
+}
+
+tr {
+    display: block;
+    padding: 10px;
+}
+
+td {
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    padding: 5px;
+    margin-inline: 1em;
+
+
+}
+
+tr:nth-child(even) {
+    background-color: rgba(24, 25, 29, .5);
+}
+
+td:nth-child(odd) {
+    width: 20%;
+    text-align: left;
+}
+
+td:nth-child(even) {
+    width: 60%;
+}
+
+/* 
+  header {
+    position: relative;
+  } */
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    /* position: sticky; */
+    /* top: 0px; */
+}
+
+
+nav>ul>li {
+    display: inline-grid;
+    place-items: center
+}
+
+nav>ul>li a {
+    display: inline-grid;
+    place-items: center;
+    padding: 1em;
+    width: 100%;
+
+}
+
+nav>ul>li:hover {
+    background-color: rgb(0,
+            92,
+            92);
+}
+
+nav>ul>li a:hover {
+    color: white;
+}
