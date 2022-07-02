@@ -20,6 +20,8 @@ html {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    color-scheme: light dark;
+    scroll-behavior: smooth;
 
 }
 
