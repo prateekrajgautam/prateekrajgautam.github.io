@@ -275,7 +275,7 @@
 </body>
 
 <script type="module">
-  import "https://generatorjs.github.io/generatorjs.cdn/src/generator.modular.js"
+  import "https://generatorjs.github.io/generatorjs.cdn/dist/latest/generator.modular.js"
   //your frontend logic using generatorjs
   append(app, gen(header, "header", "", "header"))
   append(app, gen(main, "main", "", "main"))
@@ -292,7 +292,7 @@
   append(main, [staticResume, staticHighlights])
 
 
-  append(footer, staticEmail, "replace")
+  append(main, staticEmail)
   append(footer, staticContact)
 
 

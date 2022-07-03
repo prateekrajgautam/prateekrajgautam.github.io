@@ -9,11 +9,13 @@
 }
 
 :root {
-    --h: 200;
-    --s: 50%;
-    --l: 15%;
-    --a: 1;
-    /* background-color: hsla(var(--h), var(--s), var(--l), var(--a)); */
+    --h: var(--hue, 210);
+    --s: var(--sat, 40%);
+    --l: var(--light, 15%);
+    --a: .99;
+    --hueAscent: 180;
+    --ascentColor: hsla(var(--hueAscent, 180), 100%, 50%, 1);
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
 }
 
 html {
@@ -23,8 +25,8 @@ html {
     margin: 0px;
     color-scheme: light dark;
     scroll-behavior: smooth;
-    font-family: Verdana, Tahoma, sans-serif;
-    color: white;
+    font-family: sans, Verdana, Tahoma, sans-serif;
+    color: #fff;
     font-size: 1rem;
 
 }
@@ -43,7 +45,7 @@ header {
     position: sticky;
     top: 0px;
     z-index: 10;
-    background-color: hsla(calc(var(--h) + 90), 100%, 7%);
+    background-color: hsla(calc(var(--h) + 0), 100%, 5%, 1);
 
 }
 
@@ -66,14 +68,21 @@ h1 {
 
 .section {
     padding-block: clamp(4em, 15vh, 15em);
+    --a: .9;
+    background-color: hsla(var(--h), var(--sec-sat), var(--sec-light), var(--a));
 }
 
 .section:nth-child(even) {
-    background-color: hsla(var(--h), calc(var(--s) * 1.01), calc(var(--l) * 0.99), var(--a));
+
+    --sec-sat: calc(var(--s) * 1.2);
+    --sec-light: calc(var(--l) * .8);
 }
 
 .section:nth-child(odd) {
-    /* background-color: hsla(var(--h), calc(var(--s) * 0.99), calc(var(--l) * 1.01), var(--a)); */
+
+    --sec-sat: calc(var(--s) * .8);
+
+    --sec-light: calc(var(--l) * 1.2);
 }
 
 .container {
@@ -84,12 +93,7 @@ h1 {
     padding-inline: clamp(1em, 5vw, 5em);
 }
 
-/* .section-dark {
-    --h: 120;
-    --s: 80%;
-    --l: 10%;
-    background: hsla(var(--h), var(--s), var(--l), var(--a), );
-  } */
+
 
 
 
@@ -108,7 +112,7 @@ ul {
 }
 
 a {
-    color: #14b2ce;
+    color: var(--ascentColor);
     text-decoration: none;
 }
 
@@ -129,11 +133,6 @@ a {
 
 
 #contact {
-    /* --h: 190;
-    --s: 40%;
-    --l: 5%;
-    --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a)); */
     transition: box-shadow 100ms ease-in;
 }
 
@@ -181,7 +180,6 @@ a {
 
 
 .pdfrelated {
-    /* margin: 10px, 0px; */
     padding-block: 1em;
     text-align: center;
 }
@@ -189,7 +187,6 @@ a {
 .pdfObject {
     height: 100vh;
     width: 80%;
-
     padding-block: 1em;
 }
 
@@ -247,11 +244,11 @@ a {
     border-radius: 10px;
     margin: 20px 0px;
     color: #fff;
-    background-color: rgb(12, 165, 192);
+    background-color: var(--ascentColor);
 }
 
 .button:hover {
-    box-shadow: rgb(7, 226, 255) 3px 3px 2;
+    box-shadow: var(--ascentColor) 3px 3px 2;
 }
 
 .button>a {
@@ -261,8 +258,12 @@ a {
 
 
 table {
+    --table-sat: calc(var(--s) * 1.3);
+    --table-light: calc(var(--l) * 1.2);
+    --a: .9;
     font-size: 1em;
-    background-color: hsl(240, 20%, 20%);
+    background-color: hsla(var(--h), var(--table-sat), var(--table-light), var(--a));
+    ;
     padding: 15px;
     border: hsla(0, 4%, 28%, .5) solid 1px;
     margin: auto;
@@ -272,7 +273,6 @@ table {
 
 thead {
     background-color: hsla(240, 55%, 8%, 0.4);
-
 }
 
 tr {
@@ -303,16 +303,11 @@ td:nth-child(even) {
     width: 60%;
 }
 
-/* 
-  header {
-    position: relative;
-  } */
+
 
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    /* position: sticky; */
-    /* top: 0px; */
 }
 
 
@@ -330,9 +325,7 @@ nav>ul>li a {
 }
 
 nav>ul>li:hover {
-    background-color: rgb(0,
-            92,
-            92);
+    background-color: hsla(calc(var(--h) + 5), 50%, 15%, 1);
 }
 
 nav>ul>li a:hover {
