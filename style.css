@@ -5,14 +5,15 @@
     margin: 0px;
     /* overflow: auto; */
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 :root {
-    --h: 140;
-    --s: 70%;
-    --l: 5%;
+    --h: 200;
+    --s: 50%;
+    --l: 15%;
     --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+    /* background-color: hsla(var(--h), var(--s), var(--l), var(--a)); */
 }
 
 html {
@@ -22,13 +23,18 @@ html {
     margin: 0px;
     color-scheme: light dark;
     scroll-behavior: smooth;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    font-size: 1rem;
 
 }
 
 
 #app {
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+    max-width: 100vw;
 
 }
 
@@ -37,15 +43,20 @@ header {
     position: sticky;
     top: 0px;
     z-index: 10;
-    background-color: hsl(198, 100%, 7%);
+    background-color: hsla(calc(var(--h) + 90), 100%, 7%);
 
+}
+
+#spacegame {
+    opacity: .4;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     padding-block: 1em;
 }
 
@@ -57,8 +68,12 @@ h1 {
     padding-block: clamp(4em, 15vh, 15em);
 }
 
-.section-small {
-    padding-block: clamp(3em, 10vh, 10em);
+.section:nth-child(even) {
+    background-color: hsla(var(--h), calc(var(--s) * 1.01), calc(var(--l) * 0.99), var(--a));
+}
+
+.section:nth-child(odd) {
+    /* background-color: hsla(var(--h), calc(var(--s) * 0.99), calc(var(--l) * 1.01), var(--a)); */
 }
 
 .container {
@@ -76,15 +91,7 @@ h1 {
     background: hsla(var(--h), var(--s), var(--l), var(--a), );
   } */
 
-body {
-    font-size: small;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top: 0px;
-    /* background-color: #112; */
-    color: white;
 
-
-}
 
 #code {
     display: inline-block;
@@ -122,11 +129,11 @@ a {
 
 
 #contact {
-    --h: 190;
+    /* --h: 190;
     --s: 40%;
     --l: 5%;
     --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
+    background-color: hsla(var(--h), var(--s), var(--l), var(--a)); */
     transition: box-shadow 100ms ease-in;
 }
 
@@ -150,6 +157,11 @@ a {
 
 }
 
+#contact li>a {
+
+    font-size: .8em;
+}
+
 .left-content>h3 {
     display: none;
 }
@@ -160,15 +172,7 @@ a {
 }
 
 .pdf {
-    display: inline-block;
     width: 100%;
-    --h: 200;
-    --s: 33%;
-    --l: 10%;
-    --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
-
-    /* background-color: hsl(180, 33%, 10%); */
     text-align: center;
     padding: 0px;
 }
@@ -190,17 +194,8 @@ a {
 }
 
 #Email {
-    display: inline-block;
-    width: 60%;
-    /* background-color: hsl(60, 33%, 10%); */
-    --h: 240;
-    --s: 23%;
-    --l: 10%;
-    --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
-
-    padding: 5% 20%;
     text-align: right;
+
 }
 
 #image-group {
@@ -215,20 +210,13 @@ a {
 #introduction .p1 {
     padding: 1em 3em;
     margin-block: 1em;
-    box-shadow: #001 1px 1px 1px;
+    box-shadow: #ccc 1px 1px 1px;
     border-radius: 1em;
     max-width: 90%;
+    background-color: hsla(216, 40%, 38%, 0.2);
 }
 
-#introduction {
-    /* background-color: hsl(240, 20%, 17%); */
-    --h: 240;
-    --s: 20%;
-    --l: 17%;
-    --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
 
-}
 
 #Embed * {
     font-size: 0px;
@@ -239,12 +227,7 @@ a {
 
 }
 
-footer {
-    min-height: 50px;
-    color: #cbb;
-    background-color: #110;
-    text-align: right;
-}
+
 
 .embedImg {
     width: 40px;
@@ -276,19 +259,6 @@ footer {
     text-decoration: none;
 }
 
-
-
-#software {
-    --h: 210;
-    --s: 10%;
-    --l: 15%;
-    --a: 1;
-    background-color: hsla(var(--h), var(--s), var(--l), var(--a));
-
-    /* background-color: hsl(0, 4%, 28%); */
-    margin: 0px;
-    /* padding: 40px 20%; */
-}
 
 table {
     font-size: 1em;
