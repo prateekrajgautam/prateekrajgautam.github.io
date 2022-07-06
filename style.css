@@ -55,7 +55,7 @@ header {
     top: 0px;
     z-index: 10;
     background-color: hsla(calc(var(--h) + 0), 100%, 5%, 1);
-    font-size: 1rem;
+    font-size: 16px;
 
 }
 
