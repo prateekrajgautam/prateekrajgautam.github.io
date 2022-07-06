@@ -8,6 +8,7 @@
     /* overflow: auto; */
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: all 500ms ease-in-out;
 }
 
 :root {
