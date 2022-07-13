@@ -8,7 +8,7 @@
     /* overflow: auto; */
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 :root {
@@ -24,7 +24,12 @@
     background-color: hsla(var(--h), var(--s), var(--l), var(--a));
     --fontSize: 1rem;
     --fontScale: 1;
-    --fontFamily: "Roboto", "Poppins", "Arial";
+    --fontFamily: "Poppins";
+    --colorScheme: normal;
+    --textColor: white;
+    --hueAscent: 180;
+    --lightAscent: 60%;
+    --satAscent: 70%;
 
     /* --fontFamily: "Poppins", "Roboto"; */
 }
@@ -37,7 +42,7 @@ html {
     color-scheme: var(--colorScheme, dark);
     scroll-behavior: smooth;
     color: var(--textColor, #FFF);
-    font-family: var(--fontFamily), "Roboto", "Poppins", "Arial";
+    font-family: var(--fontFamily), Roboto, Poppins, Arial;
     font-size: calc(var(--fontSize) * var(--fontScale, 1));
 }
 
@@ -61,7 +66,7 @@ header {
 }
 
 #spacegame {
-    opacity: .4;
+    opacity: .5;
 }
 
 h1,
@@ -71,6 +76,8 @@ h4,
 h5,
 h6 {
     padding-block: 1em;
+    color: hsla(var(--hueAscent, 180), var(--satAscent, 50%), var(--lightAscent, 50%), 1);
+
 }
 
 h1 {
@@ -123,7 +130,7 @@ ul {
 }
 
 a {
-    color: var(--ascentColor);
+    color: hsla(var(--hueAscent, 180), var(--satAscent, 50%), var(--lightAscent, 50%), 1);
     text-decoration: none;
 }
 
