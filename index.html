@@ -276,12 +276,16 @@
   </div>
 </body>
 
-<script type="module">
-  import "https://generatorjs.github.io/generatorjs.cdn/src/generator.modular.js"
-  //your frontend logic using generatorjs
-  append(app, gen(header, "header", "", "header"))
-  append(app, gen(main, "main", "", "main"))
-  append(app, gen(footer, "footer", "", "footer"))
+<script src="https://generatorjs.github.io/generatorjs.cdn/generator.js"></script>
+<script src="https://generatorjs.github.io/generatorjs.cdn/generatorWebHelper.js"></script>
+<script defer>
+  window.$ = GeneratorJs()
+  $.init()
+
+  //your app logic
+  append(app, "", "over") /* reset app */
+  append(app, gen(header, "header", 'Header content', 'header'));
+  append(app, gen(main, "main"));
 
 
 
@@ -300,7 +304,8 @@
 
 
 
-  loaddefaults()
+  window.$$ = GeneratorWebHelper()
+  $$.init()
 
 </script>
 <!-- <script src="./script.js"></script> -->
