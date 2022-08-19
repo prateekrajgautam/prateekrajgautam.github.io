@@ -271,7 +271,7 @@ a {
     border-radius: 10px;
     margin: 20px 0px;
     color: #fff;
-    background-color: var(--ascentColor);
+    background-color: hsl(var(--hue), calc(var(--sat) * 1.5), calc(var(--light) * 1.7));
 }
 
 .button:hover {
