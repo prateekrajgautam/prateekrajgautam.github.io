@@ -18,39 +18,6 @@ var staticHeader = `
 
 
 
-var staticResume = `<section id="resume" class="section pdf container">
-<h1>Resume</h1>
-<div class="pdfrelated">
-  <object class="pdfObject" data="./V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf#page=1"
-    type="application/pdf">
-    <div id="pdfbackground" class="selectEnable">
-      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf"
-        download><img class="pdfBgImg" max-width=80%
-          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/PNG-1.png" /></a>
-      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf"
-        download><img class="pdfBgImg" max-width=80%
-          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/PNG-2.png" /></a>
-      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf"
-        download><img class="pdfBgImg" max-width=80%
-          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/PNG-3.png" /></a>
-      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf"
-        download><img class="pdfBgImg" max-width=80%
-          src="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/PNG-4.png" /></a>
-      <br />
-
-    </div>
-    <p>PDF preview not available on mobile devices. Please download the resume from link below. </p><br />
-    <div class="button">
-      <a href="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2023_V01.pdf"
-        target="_download">
-        Download Resume
-      </a>
-    </div>
-  </object>
-
-</div>
-
-</section>`
 
 
 var staticHighlights = `<section id="software" class="section container">
@@ -115,41 +82,7 @@ var staticHighlights = `<section id="software" class="section container">
 </table>
 </section>`
 
-var staticContact = `<section id="contact" class="section container">
-<h1>Contact</h1>
-<h3>
-Research
-</h3>
-<ul id="research-links">
-<li><a href="https://www.researchgate.net/profile/Prateek-Raj-Gautam" target="_blank">Researchgate</a></li>
-<li><a href="https://scholar.google.co.in/citations?user=slZHj6cAAAAJ&hl=en" target="_blank">Google
-    scholar</a>
-</li>
-<li><a href="https://orcid.org/0000-0002-2889-4275" target="_blank">ORCID</a></li>
-<li><a href="https://publons.com/researcher/2100291/prateek-raj-gautam" target="_blank">Publons/ResearchID</a>
-</li>
-<li><a href="https://www.scopus.com/authid/detail.uri?authorId=57194277572" target="_blank">Scopus</a></li>
 
-</ul>
-</p>
-
-<p>
-<h3>
-Social
-</h3>
-<ul id="social-links">
-<li><a href="https://t.me/prateekrajgautam" target="_blank">Telegram</a></li>
-<li><a href="https://www.linkedin.com/in/prateekrajgautam/" target="_blank">Linkedin</a></li>
-<li><a href="https://github.com/prateekrajgautam" target="_blank">Github</a></li>
-</li>
-
-<li><a
-    href="mailto:prateekrajgautam@gmail.com?subject=from personal website&body=Hello, Dear Dr. Prateek Raj Gautam">Gmail</a>
-</li>
-<li><a href="https://wa.me/+919151404899?text=From%20personal%20website">Whatsapp</a></li>
-</ul>
-</p>
-</section>`
 
 var staticEmail = `
 <section id="Email" class="section container">
