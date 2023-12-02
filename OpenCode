@@ -1,4 +1,7 @@
-#!/bin/bash
-clear
-cd webpage
-code .
+#!/bin/sh
+cd V01
+ls | grep png > imagelist.txt
+cd ..
+nix-shell --sandbox --pure -p vscodium firefox-devedition nodejs pkgs.nodePackages.nodemon pkgs.nodePackages.parcel --run "codium . && npm i && npm run dev & firefox 127.0.0.1:5501"
+
+

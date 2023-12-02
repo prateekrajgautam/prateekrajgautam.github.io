@@ -231,7 +231,7 @@ a {
     display: inline-block;
 }
 
-#introduction .p1 {
+.p1 {
     padding: 1em 3em;
     margin-block: 1em;
     box-shadow: #ccc 1px 1px 1px;
