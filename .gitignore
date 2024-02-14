@@ -7,3 +7,5 @@
 *.blg
 *.bbl
 *.mat
+node_modules
+node_modules/*
