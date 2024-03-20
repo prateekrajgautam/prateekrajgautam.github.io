@@ -109,7 +109,9 @@ for (i=0;i<highlights.length;i++){
   append("#"+detailVar,gen(a,"","View","",{href:url,target:"_blank"}))
 }
 
-
+//youtube 
+var ytembed=`<p><iframe width="560" height="315" src="https://www.youtube.com/embed/undefined" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a> and <a href="http://eucasinos.se/">eu casino</a></iframe></p>`
+append(main, ytembed) 
 
 //contacts
 
