@@ -110,11 +110,14 @@ for (i=0;i<highlights.length;i++){
 }
 
 //youtube 
-var ytembed=`<p><iframe width="560" height="315" src="https://www.youtube.com/embed/nIwndbfBDFU" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a> and <a href="http://eucasinos.se/">eu casino</a></iframe></p>`
-append(Research, ytembed) 
+var ytembed=`<p width="100%"><iframe width="560" height="315" src="https://www.youtube.com/embed/nIwndbfBDFU" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a> and <a href="http://eucasinos.se/">eu casino</a></iframe></p>`
+
 append(Research,gen(div,"",gen(object,"phdpdfObject","","pdfObject",{data:`${phdpdfurl}#page=1`,type:"application/pdf"}),"pdfrelated"))
 append(phdpdfObject,gen(div,"pdffallback","","pdffallback"))
 append(pdffallback,gen(a,"",'download presentation',"",{href:phdpdfurl,target:"_blank"}))
+append(Research, ytembed) 
+
+
 //contacts
 
 var ContactLinks = {
