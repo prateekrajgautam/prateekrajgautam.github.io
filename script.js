@@ -1,7 +1,7 @@
 //header
 load("./style.scss")
 
-var headerslist='Introduction,Resume,Highlights,Contact'.split(",")
+var headerslist='Introduction,Resume,Highlights,Research,Contact'.split(",")
 
 append(app,gen(header,"header",gen(nav,"nav",gen(ul,"navlist"),"nav"),"header"))
 append(app,gen(main,'main'))
@@ -43,7 +43,7 @@ introArray.forEach(row=>{
 var pdfurl="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01.pdf"
 var pdfurl2="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01_schooling.pdf"
 var pdfurlrelative="./V01/Dr.PrateekRajGautam_Resume_2024_V01.pdf"
-
+var phdpdfurl=`https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/MainPPTNoVideo.pdf`
 var pnglist
 
 
@@ -111,8 +111,10 @@ for (i=0;i<highlights.length;i++){
 
 //youtube 
 var ytembed=`<p><iframe width="560" height="315" src="https://www.youtube.com/embed/undefined" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a> and <a href="http://eucasinos.se/">eu casino</a></iframe></p>`
-append(main, ytembed) 
-
+append(Research, ytembed) 
+append(Research,gen(div,"",gen(object,"phdpdfObject","","pdfObject",{data:`${phdpdfurl}#page=1`,type:"application/pdf"}),"pdfrelated"))
+append(phdpdfObject,gen(div,"pdffallback","","pdffallback"))
+append(pdffallback,gen(a,"",'download presentation',"",{href:phdpdfurl,target:"_blank"}))
 //contacts
 
 var ContactLinks = {
