@@ -124,23 +124,24 @@ append(main,gen(section,"misc",gen(h1,"","Forward Resume"),"container section"))
 
 function showOpenPDF(e=""){
   if (e==""|| e.key=="d"){
-append(Research,gen(div,"",gen(object,"phdpdfObject","","pdfObject",{data:`${phdpdfurlrelative}#page=1`,type:"application/pdf"}),"pdfrelated"))
-append(phdpdfObject,gen(div,"pdffallback","","pdffallback"))
-append(pdffallback,gen(a,"",'download presentation',"",{href:phdpdfurlrelative,target:"_blank"}))
+    append(Research,gen(div,"",gen(object,"phdpdfObject","","pdfObject",{data:`${phdpdfurlrelative}#page=1`,type:"application/pdf"}),"pdfrelated"))
+    append(phdpdfObject,gen(div,"pdffallback","","pdffallback"))
+    append(pdffallback,gen(a,"",'download presentation',"",{href:phdpdfurlrelative,target:"_blank"}))
 
-append(misc,
-  gen(button,'',
-    gen(a,
-      "",
-      "Download PPT",
-      "selectDisable",
-      {href:phdpdfurl,target:"_blank"}
-    ),
-    "button"
-  )
-)}
+    append(misc,
+      gen(button,'',
+        gen(a,
+          "",
+          "Download PPT",
+          "selectDisable",
+          {href:phdpdfurl,target:"_blank"}
+        ),
+        "button"
+      )
+    )
 
 document.removeEventListener("keydown",showOpenPDF)
+}
 }
 
 
