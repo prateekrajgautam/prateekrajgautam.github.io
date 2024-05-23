@@ -117,14 +117,35 @@ for (i=0;i<highlights.length;i++){
 //youtube 
 var ytembed=`<p id="ytp" width="100%"><iframe id="ytVideo" width="560" height="315" src="https://www.youtube.com/embed/nIwndbfBDFU" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">embed youtube video</a> and <a href="http://eucasinos.se/">eu casino</a></iframe></p>`
 
-var showOpenPDF=false;
 
-if(showOpenPDF){
+append(main,gen(section,"misc",gen(h1,"","Forward Resume"),"container section"))
+
+
+
+function showOpenPDF(e=""){
+  if (e==""|| e.key=="d"){
 append(Research,gen(div,"",gen(object,"phdpdfObject","","pdfObject",{data:`${phdpdfurlrelative}#page=1`,type:"application/pdf"}),"pdfrelated"))
 append(phdpdfObject,gen(div,"pdffallback","","pdffallback"))
 append(pdffallback,gen(a,"",'download presentation',"",{href:phdpdfurlrelative,target:"_blank"}))
+
+append(misc,
+  gen(button,'',
+    gen(a,
+      "",
+      "Download PPT",
+      "selectDisable",
+      {href:phdpdfurl,target:"_blank"}
+    ),
+    "button"
+  )
+)}
+
+document.removeEventListener("keydown",showOpenPDF)
 }
 
+
+
+// showOpenPDF()
 append(Research, ytembed) 
 
 
@@ -169,7 +190,6 @@ Object.entries(ContactLinks).forEach(entry=>{
 
 
 
-append(main,gen(section,"misc",gen(h1,"","Forward Resume"),"container section"))
 
 append(misc,
   gen(button,'',
@@ -183,17 +203,7 @@ append(misc,
   )
 )
 
- append(misc,
-  gen(button,'',
-    gen(a,
-      "",
-      "Download PPT",
-      "selectDisable",
-      {href:phdpdfurl,target:"_blank"}
-    ),
-    "button"
-  )
-)
+ 
 
 
 
@@ -225,3 +235,6 @@ append(misc,
 
 
 $$.init()
+
+
+document.addEventListener("keydown",showOpenPDF)
