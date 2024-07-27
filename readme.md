@@ -6,6 +6,9 @@
 
 ![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-4.png)
 
+![](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/PNG-5.png)
+
+
 # [Download updated resume PDF](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/01_PrateekRajGautam_2021_Resume_with_photo_V3.pdf)
 
 # [Download updated resume PDF with Schooling](https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V3/01_PrateekRajGautam_2021_Resume_with_photo_V3withSchooling.pdf)
