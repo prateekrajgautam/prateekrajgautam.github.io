@@ -40,9 +40,9 @@ introArray.forEach(row=>{
 
 
 
-var pdfurl="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01.pdf"
-var pdfurl2="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01_schooling.pdf"
-var pdfurlrelative="./V01/Dr.PrateekRajGautam_Resume_2024_V01.pdf"
+var pdfurl="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2025_V01.pdf"
+var pdfurl2="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2025_V01_schooling.pdf"
+var pdfurlrelative="./V01/Dr.PrateekRajGautam_Resume_2025_V01.pdf"
 var phdpdfurl="https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/MainPPTNoVideo.pdf"
 var phdpdfurlrelative="./MainPPTNoVideo.pdf"
 
@@ -212,13 +212,13 @@ var forwardasemail=`mailto:edit?cc=prateekrajgautam@gmail.com&subject=Applicatio
 
         Please consider attached resume for the post of Assistant Professor in ECE, Electrical, and CS of your Institute.
         
-        Download Resume: https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01_schooling.pdf    
+        Download Resume: https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2025_V01_schooling.pdf    
       
         -- 
         Dr. Prateek Raj Gautam  
         9151 404 899  
         https://prateekrajgautam.github.io   
-      &attachment=https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2024_V01_schooling.pdf`
+      &attachment=https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2025_V01_schooling.pdf`
 
 
       
