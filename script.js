@@ -56,12 +56,15 @@ var phdpdfurlrelative="./MainPPTNoVideo.pdf"
 append(Resume,gen(div,"",gen(object,"pdfObject","","pdfObject",{data:`${pdfurlrelative}#page=1`,type:"application/pdf"}),"pdfrelated"))
 append(pdfObject,gen(div,"pdffallback","","pdffallback"))
 
+
 getfile("./V01/imagelist.txt",f=>{f.split("\n").filter(Boolean).map(f=>{
+  
     var imgurl="./V01/"+f;  
     append(pdffallback,gen(a,"",gen(img,"","","",imgurl),"",{href:pdfurl,target:"_blank"}))
 });
 append(pdffallback,gen(p,"","This browser does not support PDF!"))
 })
+
 
 
 //highlights
@@ -206,12 +209,13 @@ append(misc,
 
  
 
-
-
+setTimeout(() => {
+  var emailimages = grab("#pdffallback")[0].innerHTML
+  
 var forwardasemail=`mailto:edit?cc=prateekrajgautam@gmail.com&subject=Application for the post of Assistant Professor&body=Dear Sir/Madam
 
         Please consider attached resume for the post of Assistant Professor in ECE, Electrical, and CS of your Institute.
-        
+        ${emailimages}
         Download Resume: https://raw.githubusercontent.com/prateekrajgautam/prateekrajgautam.github.io/master/V01/Dr.PrateekRajGautam_Resume_2025_V01_schooling.pdf    
       
         -- 
@@ -233,6 +237,8 @@ append(misc,
     "button"
   )
 )
+
+}, 2000);
 
 
 $$.init()
