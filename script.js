@@ -149,7 +149,7 @@ document.removeEventListener("keydown",showOpenPDF)
 
 
 
-// showOpenPDF()
+showOpenPDF()
 append(Research, ytembed) 
 
 
