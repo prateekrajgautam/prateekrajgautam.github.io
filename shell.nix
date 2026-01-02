@@ -1,5 +1,5 @@
 # { pkgs ? import <nixpkgs> { config.allowUnfree = true; } }: 
-{ pkgs ? import (fetchTarball  "https://github.com/NixOS/nixpkgs/tarball/nixos-23.11") { config.allowUnfree = true; } }:
+{ pkgs ? import (fetchTarball  "https://github.com/NixOS/nixpkgs/tarball/nixos-25.11") { config.allowUnfree = true; } }:
 let
   message = "Lets Start Development";
 in 

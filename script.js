@@ -142,15 +142,15 @@ function showOpenPDF(e=""){
         "button"
       )
     )
-
+    append(Research, ytembed) 
 document.removeEventListener("keydown",showOpenPDF)
 }
 }
 
 
 
-showOpenPDF()
-append(Research, ytembed) 
+//showOpenPDF()
+
 
 
 //contacts
@@ -245,3 +245,7 @@ $$.init()
 
 
 document.addEventListener("keydown",showOpenPDF)
+
+
+
+console.log("showOpenPDF()")
